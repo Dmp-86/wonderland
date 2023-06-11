@@ -1,5 +1,9 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high .
 import string
+import colorama
+from colorama import Fore, Back, Style
+colorama.init(autoreset=True)
+
 
 def validate_name(name):
     """
