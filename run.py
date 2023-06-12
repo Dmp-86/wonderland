@@ -4,6 +4,11 @@ import colorama
 from colorama import Fore, Back, Style
 colorama.init(autoreset=True)
 
+def crossroads():
+    """
+    
+    """
+
 
 def validate_name(name):
     """
@@ -30,9 +35,9 @@ def greeting():
     print ("Let's start with your name. What shall we call you?")
     name = (input("Enter your name \n"))
     if validate_name(name):
-        print ("Welcome to the Quest, " + name)
+        print (Fore.GREEN + "Welcome to the Quest, " + name)
     else:
-        print("Invalid name! Please enter a valid name.")
+        print(Fore.RED + "Invalid name! Please enter a valid name.")
     
 
 greeting()
