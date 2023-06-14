@@ -147,6 +147,88 @@ PLACES = [
                 "name": "Secret Door in Wall of Roses"
             }
         ],
-        "story": "Congrats! You found the hidden pathway!"
+        "story": "insert story***"
+    }
+
+    {
+        "id": "08",
+        "location": "Cheshire Cat",
+        "directions": [
+            {
+                "command": "left",
+                "next": "08",
+                "name": "Stuck-END"
+            }
+            {
+                "command": "right",
+                "next": "10",
+                "name": "RabbitHole #2"
+            }
+            {
+                "command": "forward",
+                "next": "11",
+                "name": "Uncovered door to Wonderland"
+            }
+        ],
+        "story": "We're all mad here!"
+    }
+
+    {
+        "id": "09",
+        "location": "RabbitHole #1",
+        "directions": [
+            {
+                "command": "tea",
+                "next": "08",
+                "name": "Cheshire Cat"
+            }
+            {
+                "command": "muffin",
+                "next": "09",
+                "name": "Nope"
+            }
+            {
+                "command": "stopwatch",
+                "next": "11",
+                "name": "Wonderland Door"
+            }
+        ],
+        "story": "Rabbit Hole #1 story"
+    }
+
+    {
+        "id": "10",
+        "location": "RabbitHole #2",
+        "directions": [
+            {
+                "command": "forward",
+                "next": "11",
+                "name": "Wonderland Door"
+            }
+            {
+                "command": "right",
+                "next": "10",
+                "name": "Trapped-END"
+            }
+        ],
+        "story": "Rabbit hole #2 story"
+    }
+
+    {
+        "id": "11",
+        "location": "Wonderland Door",
+        "directions": [
+            {
+                "command": "left",
+                "next": "08",
+                "name": "Cheshire Cat"
+            }
+            {
+                "command": "right",
+                "next": "06",
+                "name": "Secret Door in Wall of Roses"
+            }
+        ],
+        "story": "Completed"
     }
 ]
