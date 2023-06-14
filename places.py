@@ -32,9 +32,9 @@ PLACES = [
                 "name": "Underground Tunnel of Lights"
             },
             {
-                "command": "stay",
-                "next": "02",
-                "name": "Rest up for the night"
+                "command": "right",
+                "next": "09",
+                "name": "RabbitHole #1"
             },
             {
                 "command": "forward",
@@ -51,13 +51,18 @@ PLACES = [
         "directions": [
             {
                 "command": "forward",
-                "next": "06",
-                "name": "Secret Door in Wall of Roses"
+                "next": "09",
+                "name": "RabbitHole #1"
             },
             {
-                "command": "up",
-                "next": "02",
-                "name": "Cave"
+                "command": "left",
+                "next": "07",
+                "name": "Mad Hatters Barn"
+            }
+            {
+                "command": "left",
+                "next": "05",
+                "name": "Sleepy Sasquatch"
             }
         ],
         "story": "Don't forget to top up the electric!"
@@ -72,6 +77,16 @@ PLACES = [
                 "next": "01",
                 "name": "back to the Start"
             }
+            {
+                "command": "left",
+                "next": "07",
+                "name": "Mad Hatters Barn"
+            }
+            {
+                "command": "potion",
+                "next": "06",
+                "name": "Secret Door in Wall of Roses"
+            }
         ],
         "story": "He's such a hoot!"
     },
@@ -81,14 +96,19 @@ PLACES = [
         "location": "Sleepy Sasquatch",
         "directions": [
             {
-                "command": "cave",
-                "next": "02",
-                "name": "Cave"
+                "command": "forward",
+                "next": "06",
+                "name": "Secret Door in Wall of Roses"
             },
             {
-                "command": "start",
-                "next": "01",
-                "name": "back to the Start"
+                "command": "left",
+                "next": "07",
+                "name": "Mad Hatters Barn"
+            }
+            {
+                "command": "right",
+                "next": "09",
+                "name": "RabbitHole #1"
             }
         ],
         "story": "Shhhh, don't disturb him!"
@@ -99,9 +119,32 @@ PLACES = [
         "location": "Secret Door in Wall of Roses",
         "directions": [
             {
-                "command": "back",
-                "next": "03",
-                "name": "Underground Tunnel of Lights"
+                "command": "forward",
+                "next": "10",
+                "name": "RabbitHole #2"
+            }
+            {
+                "command": "left",
+                "next": "08",
+                "name": "Cheshire Cat"
+            }
+        ],
+        "story": "Congrats! You found the hidden pathway!"
+    }
+
+    {
+        "id": "07",
+        "location": "Mad Hatters Barn",
+        "directions": [
+            {
+                "command": "left",
+                "next": "08",
+                "name": "Cheshire Cat"
+            }
+            {
+                "command": "right",
+                "next": "06",
+                "name": "Secret Door in Wall of Roses"
             }
         ],
         "story": "Congrats! You found the hidden pathway!"
