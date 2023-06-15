@@ -5,7 +5,7 @@ import pyfiglet
 import colorama
 from colorama import Fore, Back, Style
 from places import PLACES
-colorama.init(autoreset=True) # Resets colorama
+colorama.init(autoreset=True)  # Resets colorama
 
 
 CURRENT_LOCATION = "01"
@@ -36,29 +36,35 @@ def greeting():
     """
     global NAME
     art_text = pyfiglet.figlet_format("Wonderland", font="utopiab")
-    print(art_text)
+    print(Fore.YELLOW + art_text)
     print("Welcome to Wonderland Quest!")
-    print("You're about to embark on a magical journey through a mystical land...")
+    print(
+        "You're about to embark on a magical journey "
+        "through a mystical land..."
+    )
     print("Can you make it to the forest to .....?")
     print("Follow the prompts and choose which direction you want to travel.")
     print("But BEWARE! Not everything is as it seems...\n")
     print("Let's start with your name. What shall we call you?")
 
     while True:
-        NAME = input("Enter your name \n")
+        NAME = input(Fore.CYAN + "Enter your name \n")
         clear()
         if validate_name(NAME):
             print(Fore.GREEN + "Welcome to the Quest, " + NAME)
             break
         else:
-            print(Fore.RED + f"{NAME} is an invalid name! Please enter a valid name.")
+            print(
+                Fore.RED +
+                f"{NAME} is an invalid name! Please enter a valid name."
+            )
 
 
 def arrive_at_place():
     global CURRENT_LOCATION
 
     # lambda filter to find the place that the user is currently at
-    current_location = next(filter(lambda place: place["id"] == CURRENT_LOCATION, PLACES))
+    current_location = next(filter(lambda place: place["id"] == CURRENT_LOCATION, PLACES))  # noqa
     next_location = None
     while True:
         print(f"You are currently at {current_location['location']}")
@@ -69,7 +75,10 @@ def arrive_at_place():
         for direction in current_location["directions"]:
             # append to the empty DIRECTIONS for validation
             DIRECTIONS.append(direction["command"])
-            print(f"\tType {Fore.MAGENTA}{direction['command']} {Fore.WHITE}to go to the {direction['name']}")
+            print(
+                f"\tType {Fore.MAGENTA}{direction['command']} "
+                f"{Fore.WHITE}to go to the {direction['name']}"
+            )
         # ask the user where they want to go
         user_choice = input("\nType your direction:\n")
         clear()
@@ -79,8 +88,8 @@ def arrive_at_place():
             # grab the matching place ID for the user's choice
             for direction in current_location["directions"]:
                 if user_choice.lower() == direction["command"]:
-                    # lambda filter to find the next location by the user's choice ID
-                    next_location = next(filter(lambda place: place["id"] == direction["next"], PLACES))
+                    # lambda filter to find next location by user's choice ID
+                    next_location = next(filter(lambda place: place["id"] == direction["next"], PLACES))  # noqa
                     CURRENT_LOCATION = next_location["id"]
                     # break out of the for-loop
                     break
@@ -88,7 +97,10 @@ def arrive_at_place():
             break
         else:
             # user entered an invalid direction, ask again
-            print(Fore.RED + "{user_choice} is invalid direction - Please try again!\n")
+            print(
+                Fore.RED +
+                "{user_choice} is invalid direction - Please try again!\n"
+            )
 
     # go to the next place selected
     if next_location["id"] == str(len(PLACES)):
