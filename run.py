@@ -5,19 +5,18 @@ import pyfiglet
 import colorama
 from colorama import Fore, Back, Style
 from places import PLACES
-colorama.init(autoreset=True) #Resets colorama 
+colorama.init(autoreset=True) # Resets colorama
 
-# def crossroads():
-#     """
-#     Define crossroads function
-#     """
-#     print ("You find yourself at a crossroads. You know you're close to Wonderland..")
-#     print ("Which way would you like to go?")
-#     print ("Left takes you to the talking owl. Right takes you to the Cave.")
-#     print ("Forward brings you to sleepy Sasquatch")
-#     print (Fore.RED + "Type left, right or forward to continue")
-#     crossroads = (input("Which direction you would like to travel? \n"))
-#     # if
+
+CURRENT_LOCATION = "01"
+NAME = ""
+
+
+def clear():
+    """
+    Clear function to clean-up the terminal so things don't get messy.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def validate_name(name):
@@ -35,33 +34,24 @@ def greeting():
     """
     Greeting for main menu. Gathers user name for game
     """
+    global NAME
     art_text = pyfiglet.figlet_format("Wonderland", font="utopiab")
     print(art_text)
+    print("Welcome to Wonderland Quest!")
+    print("You're about to embark on a magical journey through a mystical land...")
+    print("Can you make it to the forest to .....?")
+    print("Follow the prompts and choose which direction you want to travel.")
+    print("But BEWARE! Not everything is as it seems...\n")
+    print("Let's start with your name. What shall we call you?")
+
     while True:
-        print ("Welcome to Wonderland Quest!")
-        print ("You're about to embark on a magical journey through a mystical land...")
-        print ("Can you make it to the forest to .....?")
-        print ("Follow the prompts and choose which direction you want to travel.")
-        print ("But BEWARE! Not everything is as it seems...\n")
-        print ("Let's start with your name. What shall we call you?")
-        name = (input("Enter your name \n"))
+        NAME = input("Enter your name \n")
         clear()
-        if validate_name(name):
-            print (Fore.GREEN + "Welcome to the Quest, " + name)
+        if validate_name(NAME):
+            print(Fore.GREEN + "Welcome to the Quest, " + NAME)
             break
         else:
-            print (Fore.RED + "Invalid name! Please enter a valid name.")
-    
-
-
-CURRENT_LOCATION = "01"
-
-
-def clear():
-    """
-    Clear function to clean-up the terminal so things don't get messy.
-    """
-    os.system("cls" if os.name == "nt" else "clear")
+            print(Fore.RED + f"{NAME} is an invalid name! Please enter a valid name.")
 
 
 def arrive_at_place():
@@ -98,7 +88,7 @@ def arrive_at_place():
             break
         else:
             # user entered an invalid direction, ask again
-            print(f"{user_choice} is invalid direction - Please try again!\n")
+            print(Fore.RED + "{user_choice} is invalid direction - Please try again!\n")
 
     # go to the next place selected
     if next_location["id"] == str(len(PLACES)):
@@ -106,11 +96,14 @@ def arrive_at_place():
     else:
         arrive_at_place()
 
+
 def wonderland(next_location):
     global CURRENT_LOCATION
+    global NAME
+    print(f"Congratulations, {NAME}")
     print(next_location["story"])
     while True:
-        play_again = input("Would you like to play again? Y or N\n")
+        play_again = input("\nWould you like to play again? Y or N\n")
         if play_again.lower() == "y":
             CURRENT_LOCATION = "01"
             clear()
@@ -121,12 +114,10 @@ def wonderland(next_location):
             break
         else:
             clear()
-            print (Fore.RED + "Invalid input! Please enter Y or N.")
+            print(Fore.RED + f"{play_again} is invalid! Please enter Y or N.")
 
 
 if __name__ == "__main__":
     clear()
     greeting()
     arrive_at_place()
-
-
