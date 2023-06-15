@@ -3,7 +3,7 @@ import os
 import string
 import colorama
 from colorama import Fore, Back, Style
-import places from PLACES
+import places
 colorama.init(autoreset=True) #Resets colorama 
 
 def crossroads():

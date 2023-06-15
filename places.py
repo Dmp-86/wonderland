@@ -58,7 +58,7 @@ PLACES = [
                 "command": "left",
                 "next": "07",
                 "name": "Mad Hatters Barn"
-            }
+            },
             {
                 "command": "left",
                 "next": "05",
@@ -76,12 +76,12 @@ PLACES = [
                 "command": "right",
                 "next": "01",
                 "name": "back to the Start"
-            }
+            },
             {
                 "command": "left",
                 "next": "07",
                 "name": "Mad Hatters Barn"
-            }
+            },
             {
                 "command": "potion",
                 "next": "06",
@@ -104,7 +104,7 @@ PLACES = [
                 "command": "left",
                 "next": "07",
                 "name": "Mad Hatters Barn"
-            }
+            },
             {
                 "command": "right",
                 "next": "09",
@@ -122,7 +122,7 @@ PLACES = [
                 "command": "forward",
                 "next": "10",
                 "name": "RabbitHole #2"
-            }
+            },
             {
                 "command": "left",
                 "next": "08",
@@ -130,7 +130,7 @@ PLACES = [
             }
         ],
         "story": "Congrats! You found the hidden pathway!"
-    }
+    },
 
     {
         "id": "07",
@@ -140,7 +140,7 @@ PLACES = [
                 "command": "left",
                 "next": "08",
                 "name": "Cheshire Cat"
-            }
+            },
             {
                 "command": "right",
                 "next": "06",
@@ -148,7 +148,7 @@ PLACES = [
             }
         ],
         "story": "insert story***"
-    }
+    },
 
     {
         "id": "08",
@@ -158,12 +158,12 @@ PLACES = [
                 "command": "left",
                 "next": "08",
                 "name": "Stuck-END"
-            }
+            },
             {
                 "command": "right",
                 "next": "10",
                 "name": "RabbitHole #2"
-            }
+            },
             {
                 "command": "forward",
                 "next": "11",
@@ -171,7 +171,7 @@ PLACES = [
             }
         ],
         "story": "We're all mad here!"
-    }
+    },
 
     {
         "id": "09",
@@ -181,12 +181,12 @@ PLACES = [
                 "command": "tea",
                 "next": "08",
                 "name": "Cheshire Cat"
-            }
+            },
             {
                 "command": "muffin",
                 "next": "09",
                 "name": "Nope"
-            }
+            },
             {
                 "command": "stopwatch",
                 "next": "11",
@@ -194,7 +194,7 @@ PLACES = [
             }
         ],
         "story": "Rabbit Hole #1 story"
-    }
+    },
 
     {
         "id": "10",
@@ -204,7 +204,7 @@ PLACES = [
                 "command": "forward",
                 "next": "11",
                 "name": "Wonderland Door"
-            }
+            },
             {
                 "command": "right",
                 "next": "10",
@@ -212,7 +212,7 @@ PLACES = [
             }
         ],
         "story": "Rabbit hole #2 story"
-    }
+    },
 
     {
         "id": "11",
@@ -222,7 +222,7 @@ PLACES = [
                 "command": "left",
                 "next": "08",
                 "name": "Cheshire Cat"
-            }
+            },
             {
                 "command": "right",
                 "next": "06",
@@ -230,5 +230,5 @@ PLACES = [
             }
         ],
         "story": "Completed"
-    }
+    },
 ]
