@@ -1,6 +1,7 @@
 # Write your code to expect a terminal of 80 characters wide and 24 rows high .
 import os
 import string
+import pyfiglet
 import colorama
 from colorama import Fore, Back, Style
 from places import PLACES
@@ -34,6 +35,8 @@ def greeting():
     """
     Greeting for main menu. Gathers user name for game
     """
+    art_text = pyfiglet.figlet_format("Wonderland", font="utopiab")
+    print(art_text)
     while True:
         print ("Welcome to Wonderland Quest!")
         print ("You're about to embark on a magical journey through a mystical land...")
