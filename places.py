@@ -19,10 +19,10 @@ PLACES = [
                 "name": "Sleepy Sasquatch"
             }
         ],
-        "story": "You're at a crossroads, and you find a scroll with an old map printed on it /n"
-        "Travelling left will bring you to the wise old Talking Owl. /n"
-        "If you keep going forward, you will meet a Sleepy Sasquatch. /n "
-        "Going right will bring you to the Cave. /n"
+        "story": "You're at a crossroads, and you find a scroll with an old map printed on it.\n"
+            "Travelling left will bring you to the wise old Talking Owl.\n"
+            "If you keep going forward, you will meet a Sleepy Sasquatch.\n"
+            "Going right will bring you to the Cave.\n"
     },
 
     {
@@ -45,10 +45,10 @@ PLACES = [
                 "name": "Sleepy Sasquatch"
             }
         ],
-        "story": "Have a look around! No-one can see you hidden in the cave. /n"
-        "Are you brave enough to enter Sasquatches lair? /n"
-        "Perhaps a euphoric trip to Tunnel of lights sounds better? /n"
-        "Or jump down the rabbit hole, to see what adventure lies beneath. /n"
+        "story": "Have a look around! No-one can see you hidden in the cave. \n"
+        "Are you brave enough to enter Sasquatches lair? \n"
+        "Perhaps a euphoric trip to Tunnel of lights sounds better? \n"
+        "Or jump down the rabbit hole, to see what adventure lies beneath. \n"
     },
 
     {
@@ -72,8 +72,8 @@ PLACES = [
             }
         ],
         "story": "Don't forget to top up the electric!"
-        "You find yourself needing a rest before the next stage of your journey. /n"
-        "Will Sasquatch be happy to see you? Will the Mad Hatter be angry at your arrival? /n"
+        "You find yourself needing a rest before the next stage of your journey. \n"
+        "Will Sasquatch be happy to see you? Will the Mad Hatter be angry at your arrival? \n"
     },
 
     {
@@ -96,8 +96,8 @@ PLACES = [
                 "name": "Secret Door in Wall of Roses"
             }
         ],
-        "story": "He's such a hoot! He shares stories of the mythical creatures in Wonderland. /n"
-        "But be warned...your journey can take an unexpected turn. /n"
+        "story": "He's such a hoot! He shares stories of the mythical creatures in Wonderland. \n"
+        "But be warned...your journey can take an unexpected turn. \n"
         
     },
 
@@ -121,8 +121,8 @@ PLACES = [
                 "name": "RabbitHole #1"
             }
         ],
-        "story": "Shhhh, don't disturb him! /n"
-        "Sasquatch doesn't stir, so you quietly look around for clues. /n"
+        "story": "Shhhh, don't disturb him! \n"
+        "Sasquatch doesn't stir, so you quietly look around for clues. \n"
 
     },
 
@@ -141,9 +141,9 @@ PLACES = [
                 "name": "Cheshire Cat"
             }
         ],
-        "story": "Congrats! You found the hidden pathway! /n"
-        "This door will lead you past some crazed Flying Monkeys to safety. /n"
-        "Will you seek solace in Rabbit Hole #2, or have a chat with Cheshire Cat? /n"
+        "story": "Congrats! You found the hidden pathway! \n"
+        "This door will lead you past some crazed Flying Monkeys to safety. \n"
+        "Will you seek solace in Rabbit Hole #2, or have a chat with Cheshire Cat? \n"
     },
 
     {
@@ -161,8 +161,8 @@ PLACES = [
                 "name": "Secret Door in Wall of Roses"
             }
         ],
-        "story": "Oh My! It looks likes we've interrupted a Mad Hatter Tea-Party. /n"
-        "You don't have time for tea, so you make a quick exit. /n"
+        "story": "Oh My! It looks likes we've interrupted a Mad Hatter Tea-Party. \n"
+        "You don't have time for tea, so you make a quick exit. \n"
     },
 
     {
@@ -185,9 +185,9 @@ PLACES = [
                 "name": "Secret Door"
             }
         ],
-        "story": "Welcome, {name}! We're all mad here! /n"
-        "One of  these options is not like the rest. /n"
-        "Left, Right or Forward, which one will you test? /n "
+        "story": "Welcome, {name}! We're all mad here! \n"
+        "One of  these options is not like the rest. \n"
+        "Left, Right or Forward, which one will you test? \n "
     },
 
     {
@@ -210,9 +210,9 @@ PLACES = [
                 "name": "Secret Door"
             }
         ],
-        "story": "You've arrived in the Rabbit Hole, weary and spent. /n"
-        "White Rabbit has left some items that he thinks may be useful. /n"
-        "Choose wisely, White Rabbit is a trickster. /n"
+        "story": "You've arrived in the Rabbit Hole, weary and spent. \n"
+        "White Rabbit has left some items that he thinks may be useful. \n"
+        "Choose wisely, White Rabbit is a trickster. \n"
     },
 
     {
@@ -230,8 +230,8 @@ PLACES = [
                 "name": "Trapped-END"
             }
         ],
-        "story": "You've landed in Rabbit Hole 2. /n"
-        "White Rabbit isn't home, so you quickly decide which way to go. /n"
+        "story": "You've landed in Rabbit Hole 2. \n"
+        "White Rabbit isn't home, so you quickly decide which way to go. \n"
     },
 
     {
@@ -249,6 +249,6 @@ PLACES = [
                 "name": "Secret Door in Wall of Roses"
             }
         ],
-        "story": "You have reached Wonderland! /n"
+        "story": "You have reached Wonderland! \n"
     },
 ]
