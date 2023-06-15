@@ -185,7 +185,7 @@ PLACES = [
                 "name": "Secret Door"
             }
         ],
-        "story": "Welcome, {name}! We're all mad here! \n"
+        "story": "Welcome, weary traveller! \n"
         "One of  these options is not like the rest. \n"
         "Left, Right or Forward, which one will you test? \n "
     },
@@ -237,18 +237,19 @@ PLACES = [
     {
         "id": "11",
         "location": "Secret Door",
-        "directions": [
-            {
-                "command": "left",
-                "next": "08",
-                "name": "Cheshire Cat"
-            },
-            {
-                "command": "right",
-                "next": "06",
-                "name": "Secret Door in Wall of Roses"
-            }
-        ],
+        # "directions": [
+        #     {
+        #         "command": "left",
+        #         "next": "08",
+        #         "name": "Cheshire Cat"
+        #     },
+        #     {
+        #         "command": "right",
+        #         "next": "06",
+        #         "name": "Secret Door in Wall of Roses"
+        #     }
+        # ],
         "story": "You have reached Wonderland! \n"
+        "Congratulations on finding your way!"
     },
 ]

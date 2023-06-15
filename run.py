@@ -96,6 +96,9 @@ def arrive_at_place():
     # go to the next place selected
     arrive_at_place()
 
+def wonderland():
+    current_location == ["id"]
+
 
 if __name__ == "__main__":
     greeting()
