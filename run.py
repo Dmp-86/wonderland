@@ -76,7 +76,7 @@ def arrive_at_place():
         for direction in current_location["directions"]:
             # append to the empty DIRECTIONS for validation
             DIRECTIONS.append(direction["command"])
-            print(f"\tType \"{direction['command']}\" to go to the {direction['name']}")
+            print(f"\tType {Fore.MAGENTA}{direction['command']} {Fore.WHITE}to go to the {direction['name']}")
         # ask the user where they want to go
         user_choice = input("\nType your direction:\n")
         clear()
@@ -104,7 +104,21 @@ def arrive_at_place():
         arrive_at_place()
 
 def wonderland(next_location):
+    global CURRENT_LOCATION
     print(next_location["story"])
+    while True:
+        play_again = input("Would you like to play again? Y or N\n")
+        if play_again.lower() == "y":
+            CURRENT_LOCATION = "01"
+            clear()
+            arrive_at_place()
+        elif play_again.lower() == "n":
+            clear()
+            print("Thanks for playing!")
+            break
+        else:
+            clear()
+            print (Fore.RED + "Invalid input! Please enter Y or N.")
 
 
 if __name__ == "__main__":
