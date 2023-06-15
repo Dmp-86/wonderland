@@ -63,6 +63,7 @@ def arrive_at_place():
 
     # lambda filter to find the place that the user is currently at
     current_location = next(filter(lambda place: place["id"] == CURRENT_LOCATION, PLACES))
+    next_location = None
     while True:
         print(f"You are currently at {current_location['location']}")
         print(current_location["story"])
@@ -94,15 +95,18 @@ def arrive_at_place():
             print(f"{user_choice} is invalid direction - Please try again!\n")
 
     # go to the next place selected
-    arrive_at_place()
+    if next_location["id"] == str(len(PLACES)):
+        wonderland(next_location)
+    else:
+        arrive_at_place()
 
-def wonderland():
-    current_location == ["id"]
+def wonderland(next_location):
+    print(next_location["story"])
 
 
 if __name__ == "__main__":
+    clear()
     greeting()
-    # clear()
     arrive_at_place()
-# crossroads()
+
 
