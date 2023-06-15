@@ -19,7 +19,10 @@ PLACES = [
                 "name": "Sleepy Sasquatch"
             }
         ],
-        "story": "Welcome to Wonderland!"
+        "story": "You're at a crossroads, and you find a scroll with an old map printed on it /n"
+        "Travelling left will bring you to the wise old Talking Owl. /n"
+        "If you keep going forward, you will meet a Sleepy Sasquatch. /n "
+        "Going right will bring you to the Cave. /n"
     },
 
     {
@@ -88,7 +91,9 @@ PLACES = [
                 "name": "Secret Door in Wall of Roses"
             }
         ],
-        "story": "He's such a hoot!"
+        "story": "He's such a hoot! He shares stories of the mythical creatures in Wonderland. /n"
+        "But be warned...your journey can take an unexpected turn. /n"
+        
     },
 
     {
@@ -129,7 +134,9 @@ PLACES = [
                 "name": "Cheshire Cat"
             }
         ],
-        "story": "Congrats! You found the hidden pathway!"
+        "story": "Congrats! You found the hidden pathway! /n"
+        "This door will lead you past some crazed Flying Monkeys to safety. /n"
+        "Will you seek solace in Rabbit Hole #2, or have a chat with Cheshire Cat? /n"
     },
 
     {
@@ -157,7 +164,7 @@ PLACES = [
             {
                 "command": "left",
                 "next": "08",
-                "name": "Stuck-END"
+                "name": "END"
             },
             {
                 "command": "right",
@@ -167,10 +174,10 @@ PLACES = [
             {
                 "command": "forward",
                 "next": "11",
-                "name": "Uncovered door to Wonderland"
+                "name": "Secret Door"
             }
         ],
-        "story": "We're all mad here!"
+        "story": "Welcome, {name}! We're all mad here!"
     },
 
     {
@@ -190,7 +197,7 @@ PLACES = [
             {
                 "command": "stopwatch",
                 "next": "11",
-                "name": "Wonderland Door"
+                "name": "Secret Door"
             }
         ],
         "story": "Rabbit Hole #1 story"
@@ -203,7 +210,7 @@ PLACES = [
             {
                 "command": "forward",
                 "next": "11",
-                "name": "Wonderland Door"
+                "name": "Secret Door"
             },
             {
                 "command": "right",
@@ -216,7 +223,7 @@ PLACES = [
 
     {
         "id": "11",
-        "location": "Wonderland Door",
+        "location": "Secret Door",
         "directions": [
             {
                 "command": "left",
