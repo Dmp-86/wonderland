@@ -58,6 +58,7 @@ def greeting():
                 Fore.RED +
                 f"{NAME} is an invalid name! Please enter a valid name."
             )
+            print(Fore.RED + "No numbers or special characters will be accepted.")
 
 
 def arrive_at_place():
@@ -68,7 +69,7 @@ def arrive_at_place():
     next_location = None
     while True:
         print(
-            f"You are now at {Fore.MAGENTA}{current_location['location']}{Fore.WHITE}"
+            f"You are now at {Fore.CYAN}{current_location['location']}{Fore.WHITE}"
         )
         print(current_location["story"])
         print(Fore.GREEN + "Which direction would you like to go next?\n")
@@ -79,10 +80,10 @@ def arrive_at_place():
             DIRECTIONS.append(direction["command"])
             print(
                 f"\tType {Fore.MAGENTA}{direction['command']} "
-                f"{Fore.WHITE}to go to the {direction['name']}"
+                f"{Fore.WHITE}to go to the {Fore.CYAN}{direction['name']}{Fore.WHITE}"
             )
         # ask the user where they want to go
-        user_choice = input(Fore.RED + "\nType your direction:\n")
+        user_choice = input("\nType your direction:\n")
         clear()
 
         # check that the user's choice is in the available DIRECTIONS

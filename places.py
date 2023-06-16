@@ -1,7 +1,7 @@
 PLACES = [
     {
         "id": "01",
-        "location": "the beginning of your Quest",
+        "location": "beginning of your Quest",
         "directions": [
             {
                 "command": "left",
@@ -84,7 +84,7 @@ PLACES = [
             {
                 "command": "right",
                 "next": "01",
-                "name": "Back to The Start"
+                "name": "beginning of your Quest"
             },
             {
                 "command": "left",
