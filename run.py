@@ -102,10 +102,10 @@ def arrive_at_place():
             break
 
 
-    # go to the next place selected
-    if next_location["id"] == str(len(PLACES[-2])):
+# go to the next place selected
+    if next_location["id"] == "11":
         wonderland(next_location)
-    elif next_location["id"] == str(len(PLACES[-1])):
+    elif next_location["id"] == "12":
         unlucky(next_location)
     else:
         arrive_at_place()
@@ -113,7 +113,6 @@ def arrive_at_place():
 
 def wonderland(next_location):
     global CURRENT_LOCATION
-    next_location = None
     global NAME
     print(f"You've made it, {NAME}")
     print(next_location["story"])
@@ -132,8 +131,8 @@ def wonderland(next_location):
             print(Fore.RED + f"{play_again} is invalid! Please enter Y or N.")
 
 
-def unlucky():
-    # global CURRENT_LOCATION
+def unlucky(next_location):
+    global CURRENT_LOCATION
     global NAME
     print(Fore.RED + f"Poor {NAME}, you've made the wrong choice.\n")
     print(next_location["story"])
