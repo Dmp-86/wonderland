@@ -1,7 +1,7 @@
 PLACES = [
     {
         "id": "01",
-        "location": "the Start",
+        "location": "the beginning of your Quest",
         "directions": [
             {
                 "command": "left",
@@ -74,6 +74,7 @@ PLACES = [
         "story": "Don't forget to top up the electric!"
         "You find yourself needing a rest before the next stage of your journey. \n"
         "Will Sasquatch be happy to see you? Will the Mad Hatter be angry at your arrival? \n"
+        "Choose your path wisely.."
     },
 
     {
@@ -98,7 +99,6 @@ PLACES = [
         ],
         "story": "He's such a hoot! He shares stories of the mythical creatures in Wonderland. \n"
         "But be warned...your journey can take an unexpected turn. \n"
-        
     },
 
     {
@@ -123,7 +123,7 @@ PLACES = [
         ],
         "story": "Shhhh, don't disturb him! \n"
         "Sasquatch doesn't stir, so you quietly look around for clues. \n"
-
+        "You know you don't have much time, let's get out of here! \n"
     },
 
     {
@@ -139,6 +139,11 @@ PLACES = [
                 "command": "left",
                 "next": "08",
                 "name": "Cheshire Cat"
+            }
+            {
+                "command": "right",
+                "next": "12",
+                "name": "Unknown path of darkness"
             }
         ],
         "story": "Congrats! You found the hidden pathway! \n"
@@ -237,6 +242,25 @@ PLACES = [
     {
         "id": "11",
         "location": "Secret Door",
+        # "directions": [
+        #     {
+        #         "command": "left",
+        #         "next": "08",
+        #         "name": "Cheshire Cat"
+        #     },
+        #     {
+        #         "command": "right",
+        #         "next": "06",
+        #         "name": "Secret Door in Wall of Roses"
+        #     }
+        # ],
+        "story": "You have reached Wonderland! \n"
+        "Congratulations on finding your way!"
+    },
+
+    {
+        "id": "12",
+        "location": "Unknown path of darkness",
         # "directions": [
         #     {
         #         "command": "left",
