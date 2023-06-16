@@ -250,7 +250,7 @@ PLACES = [
     {
         "id": "12",
         "location": "Unknown path of darkness",
-        "story": "Oh no...you're lost in an infinite loop of darkness.\n"
+        "story": "You're lost in an infinite loop of darkness.\n"
         "You'll never reach Wonderland from this realm.\n"
     },
 ]
