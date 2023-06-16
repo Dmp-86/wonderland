@@ -105,6 +105,8 @@ def arrive_at_place():
     # go to the next place selected
     if next_location["id"] == str(len(PLACES)):
         wonderland(next_location)
+    elif next_location["id"] == str(len(PLACES[-1])):
+        unlucky(next_location)
     else:
         arrive_at_place()
 
