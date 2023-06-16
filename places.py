@@ -139,7 +139,7 @@ PLACES = [
                 "command": "left",
                 "next": "08",
                 "name": "Cheshire Cat"
-            }
+            },
             {
                 "command": "right",
                 "next": "12",
