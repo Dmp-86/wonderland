@@ -74,7 +74,7 @@ PLACES = [
         "story": "Don't forget to top up the electric!"
         "You find yourself needing a rest before the next stage of your journey. \n"
         "Will Sasquatch be happy to see you? Will the Mad Hatter be angry at your arrival? \n"
-        "Choose your path wisely.."
+        "Choose your path wisely..\n"
     },
 
     {
@@ -146,9 +146,10 @@ PLACES = [
                 "name": "Unknown path of darkness"
             }
         ],
-        "story": "Congrats! You found the hidden pathway! \n"
+        "story": "Great job! You found the hidden pathway! \n"
         "This door will lead you past some crazed Flying Monkeys to safety. \n"
         "Will you seek solace in Rabbit Hole #2, or have a chat with Cheshire Cat? \n"
+        "Perhaps your curiosity will bring you along the Unknown path of darkness..\n"
     },
 
     {
@@ -176,8 +177,8 @@ PLACES = [
         "directions": [
             {
                 "command": "left",
-                "next": "08",
-                "name": "END"
+                "next": "12",
+                "name": "Unknown path of darkness"
             },
             {
                 "command": "right",
@@ -206,8 +207,8 @@ PLACES = [
             },
             {
                 "command": "muffin",
-                "next": "09",
-                "name": "Nope"
+                "next": "12",
+                "name": "Unknown path of darkness"
             },
             {
                 "command": "stopwatch",
@@ -231,8 +232,8 @@ PLACES = [
             },
             {
                 "command": "right",
-                "next": "10",
-                "name": "Trapped-END"
+                "next": "12",
+                "name": "Unknown path of darkness"
             }
         ],
         "story": "You've landed in Rabbit Hole 2. \n"
@@ -242,18 +243,6 @@ PLACES = [
     {
         "id": "11",
         "location": "Secret Door",
-        # "directions": [
-        #     {
-        #         "command": "left",
-        #         "next": "08",
-        #         "name": "Cheshire Cat"
-        #     },
-        #     {
-        #         "command": "right",
-        #         "next": "06",
-        #         "name": "Secret Door in Wall of Roses"
-        #     }
-        # ],
         "story": "You have reached Wonderland! \n"
         "Congratulations on finding your way!"
     },
@@ -261,19 +250,7 @@ PLACES = [
     {
         "id": "12",
         "location": "Unknown path of darkness",
-        # "directions": [
-        #     {
-        #         "command": "left",
-        #         "next": "08",
-        #         "name": "Cheshire Cat"
-        #     },
-        #     {
-        #         "command": "right",
-        #         "next": "06",
-        #         "name": "Secret Door in Wall of Roses"
-        #     }
-        # ],
-        "story": "You have reached Wonderland! \n"
-        "Congratulations on finding your way!"
+        "story": "Oh no...you're lost in an infinite loop of darkness.\n"
+        "You'll never reach Wonderland from this realm.\n"
     },
 ]
