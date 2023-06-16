@@ -37,14 +37,14 @@ def greeting():
     global NAME
     art_text = pyfiglet.figlet_format("Wonderland", font="utopiab")
     print(Fore.YELLOW + art_text)
-    print("Welcome to Wonderland Quest!")
+    print(Fore.GREEN + "\tWelcome to Wonderland Quest!")
     print(
         "You're about to embark on a magical journey "
         "through a mystical land..."
     )
-    print("Can you make it to the forest to .....?")
+    print(Fore.MAGENTA + "\tCan you make it to Wonderland?")
     print("Follow the prompts and choose which direction you want to travel.")
-    print("But BEWARE! Not everything is as it seems...\n")
+    print(Fore.RED + "But BEWARE! Not everything is as it seems...\n")
     print("Let's start with your name. What shall we call you?")
 
     while True:
@@ -67,7 +67,9 @@ def arrive_at_place():
     current_location = next(filter(lambda place: place["id"] == CURRENT_LOCATION, PLACES))  # noqa
     next_location = None
     while True:
-        print(f"You are currently at {current_location['location']}")
+        print(
+            f"You are now at {Fore.MAGENTA}{current_location['location']}{Fore.WHITE}"
+        )
         print(current_location["story"])
         print(Fore.GREEN + "Which direction would you like to go next?\n")
         DIRECTIONS = []
@@ -80,7 +82,7 @@ def arrive_at_place():
                 f"{Fore.WHITE}to go to the {direction['name']}"
             )
         # ask the user where they want to go
-        user_choice = input("\nType your direction:\n")
+        user_choice = input(Fore.RED + "\nType your direction:\n")
         clear()
 
         # check that the user's choice is in the available DIRECTIONS
