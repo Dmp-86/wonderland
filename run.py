@@ -129,6 +129,25 @@ def wonderland(next_location):
             print(Fore.RED + f"{play_again} is invalid! Please enter Y or N.")
 
 
+def unlucky(next_location):
+    global CURRENT_LOCATION
+    global NAME
+    print(f"Poor, {NAME}, you didn't make it")
+    print(next_location["story"])
+    while True:
+        play_again = input("\nWould you like to play again? Y or N\n")
+        if play_again.lower() == "y":
+            CURRENT_LOCATION = "01"
+            clear()
+            arrive_at_place()
+        elif play_again.lower() == "n":
+            clear()
+            print("Thanks for playing!")
+            break
+        else:
+            clear()
+            print(Fore.RED + f"{play_again} is invalid! Please enter Y or N.")
+
 if __name__ == "__main__":
     clear()
     greeting()
