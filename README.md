@@ -115,7 +115,7 @@ The primary functions used on this application are:
     - Displays greeting message
 - `arrive_at_place()`
     - Loops through current location and asks for user in put for next directions.
-- `validate_name(n)`
+- `validate_name()`
     - Verifies that only acceptable characters have been submitted. 
 
 ### Imports
