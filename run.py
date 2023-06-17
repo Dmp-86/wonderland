@@ -114,7 +114,7 @@ def arrive_at_place():
 def wonderland(next_location):
     global CURRENT_LOCATION
     global NAME
-    print(f"You've made it, {NAME}")
+    print(f"{Fore.RED}You've made it, {NAME}!{Fore.WHITE}")
     print(next_location["story"])
     while True:
         play_again = input("\nWould you like to play again? Y or N\n")
