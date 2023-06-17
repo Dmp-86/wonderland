@@ -70,7 +70,10 @@ def arrive_at_place():
     )
     next_location = None
     while True:
-        print(f"You are now at {Fore.CYAN}{current_location['location']}{Fore.WHITE}")
+        print(
+            f"You are now "
+            "at {Fore.CYAN}{current_location['location']}{Fore.WHITE}"
+        )
         print(current_location["story"])
         print(Fore.GREEN + "Which direction would you like to go next?\n")
         DIRECTIONS = []
@@ -79,7 +82,8 @@ def arrive_at_place():
                 DIRECTIONS.append(direction["command"])
                 print(
                     f"\tType {Fore.MAGENTA}{direction['command']} "
-                    f"{Fore.WHITE}to go to the {Fore.CYAN}{direction['name']}{Fore.WHITE}"
+                    f"{Fore.WHITE}to go to "
+                    "the {Fore.CYAN}{direction['name']}{Fore.WHITE}"
                 )
             user_choice = input("\nType your direction:\n")
             clear()
@@ -88,14 +92,15 @@ def arrive_at_place():
                     if user_choice.lower() == direction["command"]:
                         next_location = next(
                             filter(lambda place: place["id"] == direction["next"], PLACES)
-                        )
+                        )  # noqa
                         CURRENT_LOCATION = next_location["id"]
                         break
                 break
             else:
                 print(
                     Fore.RED
-                    + f"{user_choice} is an invalid direction - Please try again!\n"
+                    + f"{user_choice} is an invalid direction "
+                    "- Please try again!\n"
                 )
         else:
             print(Fore.RED + "No directions available from this location.")
@@ -137,7 +142,8 @@ def unlucky(next_location):
     print(Fore.RED + f"Poor {NAME}, you've made the wrong choice.\n")
     print(next_location["story"])
     while True:
-        play_again = input(Fore.GREEN + "\nWould you like to play again? Y or N\n")
+        play_again = input(
+            Fore.GREEN + "\nWould you like to play again? Y or N\n")
         if play_again.lower() == "y":
             # CURRENT_LOCATION = "01"
             clear()
